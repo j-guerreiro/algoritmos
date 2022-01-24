@@ -9,19 +9,22 @@ chave para busca.
 valor −1, caso a chave não esteja na lista.
 */
 
-
 function busca(lista, chave) {
-    let encontrado = 0;
+    let encontrado;
     for (let indice = 0; indice < lista.length; indice++) {
-        lista[indice] == chave ? encontrado = indice : encontrado = -1;
+        let aux = lista[indice];
+        if (aux == chave ){ 
+            encontrado = indice; break;
+        } 
+        else {
+            encontrado = -1;
+        }
     };
-
-    encontrado > 0 ? console.log("\nValor encontrado no vetor! \nIndice no vetor =  [" + encontrado + "]\n")
-     : console.log("\nValor nao encontrado, indice =  [" + encontrado + "]\n");
+    console.log("\nResultado da busca = [" + encontrado + "]\n");
 }
 
-c = 14;
-l = [10, 14, 100, 65, 87, 20, 30];
+const c = 13;
+const l = [11, 14, 13, 65, 87, 23, 32];
 
 busca(l, c);
 
