@@ -1,2 +1,2 @@
-# Estudos de Algoritmos de Busca e Ordenacao
+# Estudos de Algoritmos de Busca e Ordenação
  
