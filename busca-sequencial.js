@@ -22,7 +22,7 @@ function busca(lista, chave) {
     console.log("\nResultado da busca = [" + encontrado + "]\n");
 }
 
-const c = 13;
+const c = 87;
 const l = [11, 14, 13, 65, 87, 23, 32];
 
 busca(l, c);
