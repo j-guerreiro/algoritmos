@@ -1,4 +1,4 @@
-//Algoritmo de busca simples em vetor/array de inteiros -  Autor : Joel Guerreiro
+//Algoritmo de busca sequencial em vetor/array de inteiros -  Autor : Joel Guerreiro
 
 
 /*
@@ -12,8 +12,7 @@ valor −1, caso a chave não esteja na lista.
 function busca(lista, chave) {
     let encontrado;
     for (let indice = 0; indice < lista.length; indice++) {
-        let aux = lista[indice];
-        if (aux == chave ){ 
+        if (lista[indice] == chave ){ 
             encontrado = indice; break;
         } 
         else {
