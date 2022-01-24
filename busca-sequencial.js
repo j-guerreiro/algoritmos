@@ -1,12 +1,12 @@
-//Algoritmo de busca sequencial em vetor/array de inteiros -  Autor : Joel Guerreiro
+/* 
 
-
-/*
+Algoritmo de busca sequencial em vetor/array de inteiros -  Autor : Joel Guerreiro
 • A função deve receber uma lista de números inteiros e uma
 chave para busca.
 
 • A função deve retornar o índice da lista que contém a chave ou o
 valor −1, caso a chave não esteja na lista.
+
 */
 
 function busca(lista, chave) {
