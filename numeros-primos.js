@@ -23,13 +23,10 @@ PRIMOS de 1 ate 100:
 */
 
 function ePrimo( inteiroPos ) {
-
     //#1 todos numeros maiores que 1 e multiplos de 2
-
     if ( inteiroPos == 1 ) {
         return "nao primo";
     }
-
     if ( inteiroPos > 2 ) {
         cont = 2;
         for ( let i = 2 ; i < 9 ; i++ ) {
@@ -42,7 +39,6 @@ function ePrimo( inteiroPos ) {
         if ( inteiroPos > 3  && inteiroPos % 9 == 0 ) {
             return "nao primo";
         }
-
         if ( inteiroPos > 3  && inteiroPos % 3 == 0 ) {
             return "nao primo";
         }
@@ -57,9 +53,7 @@ function ePrimo( inteiroPos ) {
     }
     return "primo";
 }
-
 //teste com 100 numeros
-
 let contPrimo = 0;
 let contNaoPrimo = 0;
 let arrayPrimos = [];
@@ -68,25 +62,20 @@ let cont = 1;
 for ( let i = 1 ; i <= 100 ; i++ ) {
     resultado = ePrimo( i );
     console.log( "\nValor de entrada: " + i + " resultado: " + resultado + "\n" );
-
     //criando um array de primos
     if ( resultado == "primo") {
         arrayPrimos.push( i );
         contPrimo++;
-
-
     } else {
         contNaoPrimo++;
     }
-}
-
-console.log("--------------------------------------------------------------------------")
+};
+console.log("--------------------------------------------------------------------------");
 console.log( "Total de numeros primos = " + contPrimo + "\n" );
 console.log( "Total de numeros nao primos = " + contNaoPrimo);
-console.log("--------------------------------------------------------------------------\n")
-
+console.log("--------------------------------------------------------------------------\n");
 console.log("Array de Numeros Primos de 1 ate 100: \n")
 console.log("[" + arrayPrimos.join(",") + "]\n");
-console.log("---------------------------------------------------------------------------")
+console.log("---------------------------------------------------------------------------");
 
 
