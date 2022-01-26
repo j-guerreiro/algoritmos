@@ -1,5 +1,7 @@
 /* # Autor do programa: Joel Guerreiro
 
+Dica para resolucao: https://www.youtube.com/watch?v=H4nOTvsv1JM
+
 1. Escreva um programa que receba um número inteiro positivo na entrada e verifique se é primo;
 2. Se o número for primo, imprima "primo".Caso contrário, imprima "nao primo";
 3. Armazene em um vetor todos numeros primos encontrados de 1 até 100 e imprima;
