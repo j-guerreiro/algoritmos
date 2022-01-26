@@ -63,7 +63,7 @@ for ( let i = 1 ; i <= 100 ; i++ ) {
     resultado = ePrimo( i );
     console.log( "\nValor de entrada: " + i + " resultado: " + resultado + "\n" );
 
-    
+    //criando um array de primos
     if ( resultado == "primo" && i != 1) {
         arrayPrimos.push( i );
         contPrimo++;
