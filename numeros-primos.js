@@ -88,6 +88,3 @@ console.log("[" + arrayPrimos.join(",") + "]\n");
 console.log("---------------------------------------------------------------------------")
 
 
-//Falta pouco, o unico problema é o No. 1 que esta dando como 'primo'
-
-
