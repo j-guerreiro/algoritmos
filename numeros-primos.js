@@ -1,14 +1,15 @@
 /* # Autor do programa: Joel Guerreiro
 
-Escreva um programa que receba um número inteiro positivo na entrada e verifique se é primo. 
-Se o número for primo, imprima "primo". 
-Caso contrário, imprima "não primo".
+1. Escreva um programa que receba um número inteiro positivo na entrada e verifique se é primo;
+2. Se o número for primo, imprima "primo".Caso contrário, imprima "nao primo";
+3. Armazene em um vetor todos numeros primos encontrados de 1 até 100 e imprima;
+4. Imprima quantos numeros primos e nao primos foram encontrados;
 
 
 CONDICAO DOS NAO PRIMOS:
 
 0. Todos numeros > 1
-1. Todos numeros > 2 e seus multiplos, terminam com 0, 2, 4, 6, 8
+1. Todos numeros > 2 e seus multiplos que terminam com 0, 2, 4, 6, 8
 2. Todos multiplos de 9 maiores que 3
 3. Todos multiplos de 5 maiores que 5
 
@@ -21,7 +22,11 @@ PRIMOS de 1 ate 100:
 
 function ePrimo( inteiroPos ) {
 
-    //#0 e #1 todos numeros maiores que 1 e multiplos de 2
+    //#1 todos numeros maiores que 1 e multiplos de 2
+
+    if ( inteiroPos == 1 ) {
+        return "nao primo";
+    }
 
     if ( inteiroPos > 2 ) {
         cont = 2;
@@ -39,16 +44,15 @@ function ePrimo( inteiroPos ) {
         if ( inteiroPos > 3  && inteiroPos % 3 == 0 ) {
             return "nao primo";
         }
-
+        //maiores que 7 e seus multiplos
         if ( inteiroPos > 7  && inteiroPos % 7 == 0 ) {
             return "nao primo";
         }
-
+        //maiores que 5 e seus multiplos
         if ( inteiroPos > 5 && inteiroPos % 5 == 0 ) {
             return "nao primo";
         }
     }
-    
     return "primo";
 }
 
@@ -64,7 +68,7 @@ for ( let i = 1 ; i <= 100 ; i++ ) {
     console.log( "\nValor de entrada: " + i + " resultado: " + resultado + "\n" );
 
     //criando um array de primos
-    if ( resultado == "primo" && i != 1) {
+    if ( resultado == "primo") {
         arrayPrimos.push( i );
         contPrimo++;
 

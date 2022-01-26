@@ -1,7 +1,9 @@
-# Estudos de Algoritmos Gerais, Exercícios, Desafios e Algoritmos de Busca e Ordenação com JavaScript
+# Estudos de Algoritmos Gerais, Exercícios e Desafios de Programação
 
-O material de apoio utilizado para este repositório está disponível [aqui](https://ic.unicamp.br/~mc102/aulas/aula11.pdf).
- 
- - Busca Sequencial
- - Busca Binária
- - Verificador de Números Primos
+_As implementaçãos serão escritas em diversas linguagens de programação como JavaScript, Python etc.O objetivo destes exercícios é exercitar habilidades de resolução de problemas com programação._
+
+O material de apoio utilizado para alguns exercícios deste repositório está disponível [aqui](https://ic.unicamp.br/~mc102/aulas/aula11.pdf).
+
+ - Busca Sequencial;
+ - Busca Binária;
+ - Verificador de Números Primos;
