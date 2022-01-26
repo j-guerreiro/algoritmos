@@ -69,7 +69,7 @@ for ( let i = 1 ; i <= 100 ; i++ ) {
     } else {
         contNaoPrimo++;
     }
-};
+}
 console.log("--------------------------------------------------------------------------");
 console.log( "Total de numeros primos = " + contPrimo + "\n" );
 console.log( "Total de numeros nao primos = " + contNaoPrimo);
