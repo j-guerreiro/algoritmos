@@ -1,0 +1,23 @@
+{
+  "name": "algoritmos",
+  "version": "1.0.0",
+  "description": "_As implementaçãos serão escritas em diversas linguagens de programação como JavaScript, Python etc.O objetivo destes exercícios é exercitar habilidades de resolução de problemas com programação._",
+  "main": "alice-n-bob.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-guerreiro/algoritmos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-guerreiro/algoritmos/issues"
+  },
+  "homepage": "https://github.com/j-guerreiro/algoritmos#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
