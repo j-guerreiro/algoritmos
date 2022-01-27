@@ -1,4 +1,6 @@
-/* # Autor do programa: Joel Guerreiro
+/* 
+
+# Autor da solucao: Joel Guerreiro
 
 Dica para resolucao: https://www.youtube.com/watch?v=H4nOTvsv1JM
 

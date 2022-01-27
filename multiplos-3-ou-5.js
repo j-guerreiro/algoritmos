@@ -1,5 +1,5 @@
 /*
-# Autor: Joel Guerreiro
+# Autor da solucao: Joel Guerreiro
 
 Problema:
 

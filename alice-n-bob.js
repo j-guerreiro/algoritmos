@@ -1,6 +1,6 @@
 /*
-# Autor: Joel Guerreiro
 
+# Autor da solucao: Joel Guerreiro
 
 Write a program that only the users Alice and Bob are greeted with their names.
 
