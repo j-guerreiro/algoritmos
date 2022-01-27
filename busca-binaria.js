@@ -2,7 +2,6 @@
 
 # Autor da solucao: Joel Guerreiro
 
-
 • A busca binária é um algoritmo mais eficiente, entretanto,
 requer que a lista esteja ordenada pelos valores da chave de
 busca.

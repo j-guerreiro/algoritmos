@@ -1,4 +1,5 @@
 /* 
+
 # Autor da solucao: Joel Guerreiro
 
 Algoritmo de busca sequencial em vetor/array de inteiros -  Autor : Joel Guerreiro

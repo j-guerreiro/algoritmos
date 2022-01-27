@@ -1,7 +1,6 @@
 /* 
+
 # Autor da solucao: Joel Guerreiro
-
-
 
 Algoritmo de busca sequencial em vetor/array de inteiros ORDENADO -  Autor : Joel Guerreiro
 • A função deve receber uma lista de números inteiros e uma
