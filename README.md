@@ -7,3 +7,6 @@ O material de apoio utilizado para alguns exercícios deste repositório está d
  - Busca Sequencial;
  - Busca Binária;
  - Verificador de Números Primos;
+ - FizzBuzz;
+ - Verificador de Login ( Alice 'n Bob);
+ - Somatorio de Multiplos entre 3 e 5;
