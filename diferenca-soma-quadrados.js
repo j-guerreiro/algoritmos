@@ -19,9 +19,8 @@ function diferencaDeQuadrados() {
     diferenca = quadradoSoma - somaQuadrados;
     return diferenca;
 }
-
-console.log(diferencaDeQuadrados());
-
 function aoQuadrado( n ) {
     return n * n;
 }
+console.log(diferencaDeQuadrados());
+
