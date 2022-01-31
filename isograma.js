@@ -10,15 +10,15 @@ Assume the empty string is an isogram. Ignore letter case.
 
 function isIsogram( str ){
   let letra;
-  let cont = 1;
   let resultado = false;
+  let cont = 0;
   for ( let i = 0 ; i < str.length ; i++ ) {
-    letra = str[i];
-    for (let j = 1 ; j < str.length ; j++ ){
+      letra = str[cont];
+      cont++;
+    for (let j = cont ; j < str.length ; j++ ){
+        console.log( letra + " == " + str[j]);
         if ( str[j] != letra ) {
-            continue;
-        } else {
-            break;
+            resultado = true;
         } 
     }
   } return resultado;
