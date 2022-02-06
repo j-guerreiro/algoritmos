@@ -19,11 +19,30 @@ posição seguinte a do meio até o final da lista.
 */
 
 function buscaBinaria(lista, chave) {
-   
+
+  //obtendo o indice do valor do meio da lista  
+  let valorMeio = lista.length / 2;
+  //atribuindo o valor do meio da lista a variavel
+  valorMeio = lista[valorMeio];
+
+  //percorrendo os indices da lista
+  for ( let i = 0 ; i <= valorMeio ; i++) {
+
+    //testando se a chave e igual ao valor da lista
+    //caso o ultimo valor seja igual, imprime o valor
+    if( chave === lista[i]) {
+      console.log(valorMeio);
+      break;
+    } else if ( valorMeio > chave ){
+  
+    }
+  }  
 }
 
-const c = 87;
-const l = [11, 14, 13, 65, 87, 23, 32];
+const c = 65;
+
+//lista
+const l = [11, 13, 14, 65, 87, 90];
 
 buscaBinaria(l, c);
 
