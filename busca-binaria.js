@@ -23,9 +23,11 @@ posição seguinte a do meio até o final da lista.
 
 function buscaBinaria(lista, chave) {
 
+  let valorInicial = 0;
+  let valorFinal = lista.length;
   console.log("\n *Valor da chave de busca: ->" + chave +"<- *\n");
   //obtendo o indice do valor do meio da lista por divisao inteira  
-  let valorMeio = parseInt(lista.length / 2);
+  let valorMeio = parseInt( valorInicial + valorFinal / 2);
 
   //indice da lista que corresponde ao valor seguinte ao valor do meio
   let seguinteMeio = valorMeio + 1;
@@ -36,8 +38,8 @@ function buscaBinaria(lista, chave) {
   for ( let i = 0 ; i <= valorMeio ; i++) {
     //testando se a chave e igual ao valor da lista
     //caso o ultimo valor que eh o valor do meio seja igual a chave, imprima o valor
-    if( chave === lista[i]) {
-      return "Valor encontrado na lista! ->" + lista[i] + "<-\n";
+    if( chave === valorMeio) {
+      return "Valor encontrado na lista! ->" + valorMeio + "<-\n";
     //caso o valor do meio da lista seja maior que a chave
     } else if ( valorMeio > chave ){
       for ( let i = 0 ; i < valorMeio ; i++) {
@@ -58,8 +60,8 @@ function buscaBinaria(lista, chave) {
   return "Valor *NAO* encontrado na lista\n";
 }
 //valor de teste
-const c = 87;
+const c = 5;
 //lista deve estar ordenada
-const l = [11, 13, 14, 65, 87, 90, 100, 150, 230];
+const l = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(buscaBinaria(l, c));
 
