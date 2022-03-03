@@ -9,13 +9,12 @@
  *
  * */
 
-
-const arrow = ( text ) => {
-  let message = "Hello, " + text + " i`m an arrow function!";
+const printMessage = (text) => {
+  let message = `\nHello, ${text} I'm an arrow function!\n`;
   return message;
 }
 
-const param = "brave soul";
+const newText = `brave soul`;
 
-console.log(arrow( param ));
+console.log(printMessage(newText));
 
