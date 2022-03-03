@@ -13,17 +13,20 @@ Calculadora de percentual e juros sobre valor informado.
 
 import entrada from 'readline-sync';
 
-function calculaJuros( capital, taxaJuros ) {
+function calculaJuros(capital, taxaJuros, padsDots) {
+  let inPads = padsDots;
   let juros = 0;
-  juros = capital * ( taxaJuros / 100 );
-  let montante = 0; 
-  montante = parseFloat( capital ) + parseFloat( juros ); 
-  console.log( "\nJuros sobre o valor \n\t---> R$ " + juros + "\n");
-  console.log( "Valor do montante ( capital + juros ) \n\t---> R$ " + montante + "\n");
+  let montante = 0;
+  juros = (capital * (taxaJuros / 100)).toFixed(2);
+  montante = (parseFloat(capital) + parseFloat(juros)).toFixed(2);
+  console.log(`\nJuros sobre o valor ${inPads} R$ ${juros}\n`);
+  console.log(`\nValor do montante ( capital + juros ) ${inPads} R$ ${montante}\n`);
 }
 
+let outPads = "";
+outPads = outPads.padStart(30, `.`);
 let valorNumerico = 0;
 let taxa = 0;
-valorNumerico = entrada.question("\nInforme um valor R$\n\t ---> ");
-taxa = entrada.question("\nInforme a taxa de juros em %\n\t ---> ");
-calculaJuros( valorNumerico, taxa );
+valorNumerico = entrada.question(`\nInforme um valor R$ ${outPads} `);
+taxa = entrada.question(`\nInforme a taxa de juros em % ${outPads} `);
+calculaJuros(valorNumerico, taxa, outPads);
