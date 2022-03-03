@@ -9,12 +9,12 @@
  *
  * */
 
-const vampire_greeter = ( vname ) => {
-  let demonGuard = "*Castle Guard Demon* says: "
-  demonGuard = demonGuard.padEnd( 50, ".");
-  let message = "\n" + demonGuard + "\'Hello master" + vname + ", welcome back to Castlevania!\'" + "\n";
+const vampire_greeter = (vname) => {
+  let demonGuard = "*Castle Demon Guard* says: ";
+  demonGuard = demonGuard.padEnd(40, ".");
+  let message = `\n ${demonGuard} Hello master ${vname}, welcome back to Castlevania!\n`;
   return message;
 }
 
-let vampireName = vampire_greeter(" Alucard " );
-console.log( vampireName );
+let vampireName = vampire_greeter("Alucard");
+console.log(vampireName);
