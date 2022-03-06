@@ -7,7 +7,7 @@ const mostrarPaises = () => {
   xhr.onload = () => {
 
     if ( xhr.status == 200) {
-      let paises = JSON.parse(response);
+      let paises = JSON.parse(this.response);
       paises.forEach(pais => {
 
         const cardPais = document.createElement('div');
