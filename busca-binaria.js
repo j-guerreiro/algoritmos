@@ -25,39 +25,39 @@ function buscaBinaria(lista, chave) {
 
   let valorInicial = 0;
   let valorFinal = lista.length;
-  console.log("\n *Valor da chave de busca: ->" + chave +"<- *\n");
+  console.log(`\n *Valor da chave de busca: -> ${chave} <- *\n`);
   //obtendo o indice do valor do meio da lista por divisao inteira  
-  let valorMeio = parseInt( valorInicial + valorFinal / 2);
+  let valorMeio = parseInt(valorInicial + valorFinal / 2);
 
   //indice da lista que corresponde ao valor seguinte ao valor do meio
   let seguinteMeio = valorMeio + 1;
-  console.log("\n Indice do valor do meio da lista: [" + valorMeio + "]\n");
-  console.log("\n Indice do valor seguinte ao indice do valor do meio: [" + seguinteMeio + "]\n");
-  console.log("\n Valor do meio da lista de acordo com o indice: ->" + lista[valorMeio] + "<- \n");
+  console.log(`\n Indice do valor do meio da lista: [${valorMeio}]\n`);
+  console.log(`\n Indice do valor seguinte ao indice do valor do meio: [${seguinteMeio}]\n`);
+  console.log(`\n Valor do meio da lista de acordo com o indice: -> [${valorMeio}] <- \n`);
   //percorrendo os indices da lista
-  for ( let i = 0 ; i <= valorMeio ; i++) {
+  for (let i = 0; i <= valorMeio; i++) {
     //testando se a chave e igual ao valor da lista
     //caso o ultimo valor que eh o valor do meio seja igual a chave, imprima o valor
-    if( chave === valorMeio) {
-      return "Valor encontrado na lista! ->" + valorMeio + "<-\n";
-    //caso o valor do meio da lista seja maior que a chave
-    } else if ( valorMeio > chave ){
-      for ( let i = 0 ; i < valorMeio ; i++) {
-        if ( chave === lista[i]) {
-          return "Valor encontrado na lista! ->" + lista[i] + "<-\n";
+    if (chave === valorMeio) {
+      return `Valor encontrado na lista! -> ${valorMeio} <-\n`;
+      //caso o valor do meio da lista seja maior que a chave
+    } else if (valorMeio > chave) {
+      for (let i = 0; i < valorMeio; i++) {
+        if (chave === lista[i]) {
+          return `Valor encontrado na lista! -> ${lista[i]} <-\n`;
         }
       }
-    //caso o valor do meio da lista seja menor que a chave
-    } else if( valorMeio < chave ) {
-      for ( let i = seguinteMeio ; i < lista.length ; i++) {
-        if ( chave === lista[i]) {
-          return "Valor encontrado na lista! ->" + lista[i] + "<-\n";
+      //caso o valor do meio da lista seja menor que a chave
+    } else if (valorMeio < chave) {
+      for (let i = seguinteMeio; i < lista.length; i++) {
+        if (chave === lista[i]) {
+          return `Valor encontrado na lista! -> ${lista[i]} <-\n`;
         }
       }
-    } 
+    }
   }
   //caso o valor nao seja encontrado na lista
-  return "Valor *NAO* encontrado na lista\n";
+  return `Valor *NAO* encontrado na lista\n`;
 }
 //valor de teste
 const c = 5;

@@ -11,21 +11,20 @@ valor −1, caso a chave não esteja na lista.
 
 */
 
-function busca(lista, chave) {
-    let encontrado;
-    for (let indice = 0; indice < lista.length; indice++) {
-        if (lista[indice] == chave ){ 
-            encontrado = indice; break;
-        } 
-        else {
-            encontrado = -1;
-        }
-    };
-    console.log("\nResultado da busca = [" + encontrado + "]\n");
+function buscaSequencial(lista, chave) {
+  let encontrado;
+  for (let indice = 0; indice < lista.length; indice++) {
+    if (lista[indice] == chave) {
+      encontrado = indice; break;
+    } else {
+      encontrado = -1;
+    }
+  };
+  console.log(`\nResultado da busca = [${encontrado}]\n`);
 }
 
-const c = 87;
-const l = [11, 14, 13, 65, 87, 23, 32];
+const chaveDeBusca = 87;
+const listaDeNumeros = [11, 14, 13, 65, 87, 23, 32];
 
-busca(l, c);
+buscaSequencial(listaDeNumeros, chaveDeBusca);
 
