@@ -88,62 +88,71 @@ const milhasParaKm = (milhas) => {
 }
 //opcoes
 const opcoes = () => {
-  conversoes = [
-    { opcao: "(1) Celsius para Fahrenheit" },
-    { opcao: "(2) Fahrenheit para Celsius" },
-    { opcao: "(3) Celsius para Kelvin" },
-    { opcao: "(4) Kelvin para Celsius" },
-    { opcao: "(5) Fahrenheit para Kelvin" },
-    { opcao: "(6) Kelvin para Fahrenheit" },
-    { opcao: "(7) Quilômetros para Milhas" },
-    { opcao: "(8) Milhas para Quilômetros" },
-    { opcao: "(9) Sair" },
+  const opcoes = [
+    { chave: "<==== GRANDEZAS DE TEMPERATURAS ====>" },
+    { chave: "                                     " },
+    { chave: "(1) Celsius para Fahrenheit - (C) => (F)" },
+    { chave: "(2) Fahrenheit para Celsius - (F) => (C)" },
+    { chave: "(3) Celsius para Kelvin     - (C) => (K)" },
+    { chave: "(4) Kelvin para Celsius     - (K) => (C)" },
+    { chave: "(5) Fahrenheit para Kelvin  - (F) => (K)" },
+    { chave: "(6) Kelvin para Fahrenheit  - (K) => (F)" },
+    { chave: "                                        " },
+    { chave: "<==== GRANDEZAS DE COMPRIMENTO ====>" },
+    { chave: "                                      " },
+    { chave: "(7) Quilômetros para Milhas - (KM)=> (M)" },
+    { chave: "(8) Milhas para Quilômetros - (M) => (KM)" },
+    { chave: "                                      " },
+    { chave: "<=" },
+    { chave: "(9) Sair" },
+    { chave: "                                      " },
   ];
 
-  for (const opcao of conversoes) {
-    console.log("\n" + opcao + "\n");
+  for (const opcao of opcoes) {
+    console.log(opcao.chave);
   }
 }
 
 const escolhaCaso = (opcaoEscolhida) => {
+  let valor = 0;
   switch (opcaoEscolhida) {
     case 1:
-      let valor = Number(entrada.question("Entre com o valor: "));
+      valor = Number(entrada.question("Entre com o valor: "));
       console.log(celsiusParaFahrenheit(valor));
       break;
 
     case 2:
-      let valor = Number(entrada.question("Entre com o valor: "));
+      valor = Number(entrada.question("Entre com o valor: "));
       console.log(fahrenheitParaCelsius(valor));
       break;
 
     case 3:
-      let valor = Number(entrada.question("Entre com o valor: "));
+      valor = Number(entrada.question("Entre com o valor: "));
       console.log(celsiusParaKelvin(valor));
       break;
 
     case 4:
-      let valor = Number(entrada.question("Entre com o valor: "));
+      valor = Number(entrada.question("Entre com o valor: "));
       console.log(kelvinParaCelsius(valor));
       break;
 
     case 5:
-      let valor = Number(entrada.question("Entre com o valor: "));
+      valor = Number(entrada.question("Entre com o valor: "));
       console.log(fahrenheitParaKelvin(valor));
       break;
 
     case 6:
-      let valor = Number(entrada.question("Entre com o valor: "));
+      valor = Number(entrada.question("Entre com o valor: "));
       console.log(kelvinParaFahrenheit(valor));
       break;
 
     case 7:
-      let valor = Number(entrada.question("Entre com o valor: "));
+      valor = Number(entrada.question("Entre com o valor: "));
       console.log(kmParaMilhas(valor));
       break;
 
     case 8:
-      let valor = Number(entrada.question("Entre com o valor: "));
+      valor = Number(entrada.question("Entre com o valor: "));
       console.log(milhasParaKm(valor));
       break;
 
@@ -157,10 +166,10 @@ const escolhaCaso = (opcaoEscolhida) => {
 }
 
 do {
-  console.log("Calculadora de Múltiplas Conversões");
-  console.log(opcoes());
-  let opcao = opcao.question("Escolha uma opção: ");
-  console.log(escolhaCaso(opcao));
+  console.log("\nCalculadora de Múltiplas Conversões\n");
+  opcoes();
+  let opcao = Number(entrada.question("Escolha uma opção: "));
+  escolhaCaso(opcao);
 
 } while (opcao != 9)
 
