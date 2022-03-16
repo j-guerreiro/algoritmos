@@ -16,9 +16,9 @@
 
 const calculaCombustivel = (precoGasolina, precoEtanol)  => {
 
-  let calculo = Number( (precoEtanol/ precoGasolina) * 100).toFixed(2);
-  let useEtanol = `\nABASTEÇA COM ETANOL! O preço informado do ETANOL é de ${calculo}% do valor da gasolina, pode abastecer com etanol\n`;
-  let useGasolina =`\nABASTEÇA COM GASOLINA! O preço informado do ETANOL excede 70% do valor da gasolina!\n`;
+  let calculo = Number((precoEtanol/ precoGasolina) * 100);
+  let useEtanol = `\nABASTEÇA COM ETANOL! O preço (R$ ${precoGasolina}) informado do ETANOL é de ${calculo}% do valor da gasolina, pode abastecer com etanol\n`;
+  let useGasolina =`\nABASTEÇA COM GASOLINA! O preço (R$ ${precoEtanol}) informado do ETANOL é de ${calculo}% do valor da gasolina!\n`;
 
   let resultado = calculo <= 70 ? useEtanol : useGasolina ;
 
