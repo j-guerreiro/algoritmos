@@ -22,7 +22,7 @@ const calcularJuros = (valor, dias) => {
 
   let montante = Number(parseInt(valor + juros)).toFixed(2);
 
-  let resultado = `\n\tPrezado, \n\n\t O atraso de ${dias} dias no valor de R$ ${valor.toFixed(2)} \n\n\tfoi acrescido de juros de R$ ${juros} e o valor total com juros é de: R$ ${montante} . \n`;
+  let resultado = `\n\tPrezado, \n\n\t O atraso de ${dias} dia(s) no valor de R$ ${valor.toFixed(2)} \n\n\tfoi acrescido de juros de R$ ${juros} e o valor total com juros é de: R$ ${montante} . \n`;
 
   return resultado;
 }
@@ -30,8 +30,15 @@ const calcularJuros = (valor, dias) => {
 let valorDivida = parseInt(entrada.question("\nInforme o valor devido em R$:...... "));
 
 if (valorDivida > 0) {
+
   let diasAtraso = parseInt(entrada.question("\nInforme o tempo de atraso em dias:......  "));
-  console.log(calcularJuros(valorDivida, diasAtraso));
+
+  if (diasAtraso > 0) {
+    console.log(calcularJuros(valorDivida, diasAtraso));
+  }
+  else {
+    console.log(`Está em dia, vida que segue!`);
+  }
 }
 else {
   console.log(`Valor inválido!`);
