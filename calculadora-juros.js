@@ -26,8 +26,11 @@ const calcularJuros = (valor, dias) => {
 
     return resultado;
   }
-  let msg = `Valor inválido`;
-  return msg;
+  else {
+    let msg = `Valor inválido`;
+    return msg;
+  }
+
 }
 
 const valorPagamento = Number(entrada.question("\nInforme o valor devido em R$:...... "));
