@@ -15,21 +15,19 @@ import entrada from 'readline-sync';
 
 const calcularJuros = (valor, dias) => {
 
-
-
   let juros = dias > 15 ? valor * 0.15 : valor * 0.05;
 
   juros = Number(parseInt(juros));
 
   let montante = Number(parseInt(valor + juros)).toFixed(2);
 
-  let resultado = `\nPrezado, \n o atraso de ${dias} dias no valor de R$ ${valor} \nfoi acrescido de juros de R$ ${juros} e o valor total com juros é de: R$ ${montante} \n`;
+  let resultado = `\n\tPrezado, \n\n\t O atraso de ${dias} dias no valor de R$ ${valor.toFixed(2)} \n\n\tfoi acrescido de juros de R$ ${juros} e o valor total com juros é de: R$ ${montante} . \n`;
 
   return resultado;
 
 }
 
-const valorPagamento = Number(entrada.question("\nInforme o valor: \n"));
-const diasAtraso = Number(entrada.question("\nInforme os dias de atraso: \n"));
+const valorPagamento = Number(entrada.question("\nInforme o valor devido em R$:...... "));
+const diasAtraso = Number(entrada.question("\nInforme o tempo de atraso em dias:......  "));
 
 console.log(calcularJuros(valorPagamento, diasAtraso));
