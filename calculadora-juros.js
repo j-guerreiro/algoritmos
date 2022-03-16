@@ -15,7 +15,7 @@ import entrada from 'readline-sync';
 
 const calcularJuros = (valor, dias) => {
 
-  let juros = dias > 15 ? valor * 0.10 : valor * 0.05;
+  let juros = (dias > 15 && valor > 0) ? valor * 0.10 : valor * 0.05;
 
   juros = Number(parseInt(juros));
 
