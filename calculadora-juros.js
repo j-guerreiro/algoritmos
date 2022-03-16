@@ -8,6 +8,7 @@ Calculadora de conversoes de valores.
 2. Entrar com os dias de atraso
 3. Caso tenha mais de 15 dias de atraso, aplicar 15% de juros ao valor informado
 caso contrario aplicar 5% de juros ao valor.
+4. Validar entradas
 
 */
 
