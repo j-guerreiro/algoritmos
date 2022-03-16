@@ -22,7 +22,7 @@ const calcularJuros = (valor, dias) => {
 
   let montante = Number(parseInt(valor + juros)).toFixed(2);
 
-  let resultado = `\n\tPrezado, \n\n\t O atraso de ${dias} dia(s) no valor de R$ ${valor.toFixed(2)} \n\n\tfoi acrescido de juros de R$ ${juros} e o valor total com juros é de: R$ ${montante} . \n`;
+  let resultado = `\n\tPrezado, \n\n\t O atraso de ${dias} dia(s) no valor original de R$ ${valor.toFixed(2)} \n\n\tfoi acrescido de juros de R$ ${juros} e o valor total com juros é de: R$ ${montante} . \n`;
 
   return resultado;
 }
