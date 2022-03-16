@@ -15,25 +15,24 @@ import entrada from 'readline-sync';
 
 const calcularJuros = (valor, dias) => {
 
-  if (valor > 0) {
-    let juros = (dias > 15) ? valor * 0.10 : valor * 0.05;
 
-    juros = Number(parseInt(juros));
+  let juros = (dias > 15) ? valor * 0.10 : valor * 0.05;
 
-    let montante = Number(parseInt(valor + juros)).toFixed(2);
+  juros = Number(parseInt(juros));
 
-    let resultado = `\n\tPrezado, \n\n\t O atraso de ${dias} dias no valor de R$ ${valor.toFixed(2)} \n\n\tfoi acrescido de juros de R$ ${juros} e o valor total com juros é de: R$ ${montante} . \n`;
+  let montante = Number(parseInt(valor + juros)).toFixed(2);
 
-    return resultado;
-  }
-  else {
-    let msg = `Valor inválido`;
-    return msg;
-  }
+  let resultado = `\n\tPrezado, \n\n\t O atraso de ${dias} dias no valor de R$ ${valor.toFixed(2)} \n\n\tfoi acrescido de juros de R$ ${juros} e o valor total com juros é de: R$ ${montante} . \n`;
 
+  return resultado;
 }
 
-const valorPagamento = Number(entrada.question("\nInforme o valor devido em R$:...... "));
-const diasAtraso = Number(entrada.question("\nInforme o tempo de atraso em dias:......  "));
+let valorDivida = parseInt(entrada.question("\nInforme o valor devido em R$:...... "));
 
-console.log(calcularJuros(valorPagamento, diasAtraso));
+if (valorDivida > 0) {
+  let diasAtraso = parseInt(entrada.question("\nInforme o tempo de atraso em dias:......  "));
+  console.log(calcularJuros(valorDivida, diasAtraso));
+}
+else {
+  console.log(`Valor inválido!`);
+}
