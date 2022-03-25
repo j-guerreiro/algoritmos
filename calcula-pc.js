@@ -21,7 +21,7 @@ const calculaPc = (cpu, motherboard, ram, ssd, hd, psu, gpu) => {
 };
 
 let dots = "";
-dots = outPads.padStart(30, `.`);
+dots = dots.padStart(30, `.`);
 let processador  = parseInt(entrada.question(`\nDigite o valor do processador/CPU:${dots}`));
 let placaMae  = parseInt(entrada.question(`\nDigite o valor da placa-mãe/MB:${dots}`));
 let memoriaRam  = parseInt(entrada.question(`\nDigite o valor da memória RAM:${dots}`));
