@@ -10,25 +10,37 @@ Entre com os valores solicitados e ao fim veja o total! =)
 
 import entrada from 'readline-sync';
 
-const calculaPc = (cpu, motherboard, ram, ssd, hd, psu, gpu) => {
+const calculaPc = (arrayHardware) => {
 
-  let total = cpu + motherboard + ram + ssd + psu + gpu;
-  
-  let msg = `O valor total do seu pc é : ${total}`;
-
+  let header = `\n<============$$$$$$$$$$$$$$$============>\n\n\t CALCULADORA DE PC ver0.1 \n\n<============$$$$$$$$$$$$$$$============>\n`;
+  console.log(header);
+  let total = 0;
+  for(const item of arrayHardware) {
+    let preço = parseInt(entrada.question(item.mensagem));
+    if (preço < 0){
+      console.log(`Valor inválido`);
+      break;
+    }
+    item.valor = preço;
+    total += preço;
+  }
+  let msg = `\n<============$$$$$$$$$$$$$$$============>\n\n\tO valor total do seu pc é:
+  \t->> R$ ${total.toFixed(2)} <<-\n\n<============$$$$$$$$$$$$$$$============>\n`;
   return msg;
 
 };
 
 let dots = "";
 dots = dots.padStart(30, `.`);
-let processador  = parseInt(entrada.question(`\nDigite o valor do processador/CPU:${dots}R$ `));
-let placaMae  = parseInt(entrada.question(`\nDigite o valor da placa-mãe/MB:${dots}R$ `));
-let memoriaRam  = parseInt(entrada.question(`\nDigite o valor da memória RAM:${dots}R$ `));
-let discoSolido  = parseInt(entrada.question(`\nDigite o valor do SSD:${dots}R$ `));
-let discoRigido  = parseInt(entrada.question(`\nDigite o valor do HD:${dots}R$ `));
-let fonteEnergia  = parseInt(entrada.question(`\nDigite o valor da FONTE:${dots}R$ `));
-let placaDeVideo  = parseInt(entrada.question(`\nDigite o valor da placa de vídeo/GPU:${dots}R$ `));
-console.log(`\n`);
 
-console.log(calculaPc(processador, placaMae, memoriaRam, discoSolido, discoRigido, fonteEnergia, placaDeVideo));
+let hardwareItens = [
+  {valor:0, mensagem:`\nDigite o valor do processador/CPU:${dots}R$ `},
+  {valor:0, mensagem:`\nDigite o valor da placa-mãe/MB:${dots}R$ `},
+  {valor:0, mensagem:`\nDigite o valor da memória RAM:${dots}R$ `},
+  {valor:0, mensagem:`\nDigite o valor do SSD:${dots}R$ `}, 
+  {valor:0, mensagem:`\nDigite o valor do HD:${dots}R$ `},
+  {valor:0, mensagem:`\nDigite o valor da FONTE:${dots}R$ `},
+  {valor:0, mensagem:`\nDigite o valor da placa de vídeo/GPU:${dots}R$ `},
+];
+
+console.log(calculaPc(hardwareItens));
