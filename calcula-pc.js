@@ -13,7 +13,7 @@ import entrada from 'readline-sync';
 const calculaPc = (cpu, motherboard, ram, ssd, hd, psu, gpu) => {
 
   let total = cpu + motherboard + ram + ssd + psu + gpu;
-
+  
   let msg = `O valor total do seu pc é : ${total}`;
 
   return msg;
@@ -28,6 +28,6 @@ let memoriaRam  = parseInt(entrada.question(`\nDigite o valor da memória RAM:${
 let discoSolido  = parseInt(entrada.question(`\nDigite o valor do SSD:${dots}`));
 let discoRigido  = parseInt(entrada.question(`\nDigite o valor do HD:${dots}`));
 let fonteEnergia  = parseInt(entrada.question(`\nDigite o valor da FONTE:${dots}`));
-let placaDeVideo  = parseInt(entrada.question(`\nDigite o valor da placa de vídeo/GPU:${dots}`));
+let placaDeVideo  = parseInt(entrada.question(`\nDigite o valor da placa de vídeo/GPU:${dots}\n`));
 
 console.log(calculaPc(processador, placaMae, memoriaRam, discoSolido, discoRigido, fonteEnergia, placaDeVideo));
