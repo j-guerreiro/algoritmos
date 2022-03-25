@@ -4,11 +4,7 @@ Autor: Joel Guerreiro
 
 Calculadora de PC
 
-1. Selecionar a opcao
-2. Entrar com o valor a ser convertido
-3. Apresentar o resultado da conversao
-4. Enquanto a opcao nao for sair, apresentar opcoes de conversao, 
-senao, encerrar o programa.
+Entre com os valores solicitados e ao fim veja o total! =)
 
 */
 
@@ -24,13 +20,14 @@ const calculaPc = (cpu, motherboard, ram, ssd, hd, psu, gpu) => {
 
 };
 
-let dots = 
-let processador  = parseInt(entrada.question("\nDigite o valor do processador/CPU: "));
-let placaMae  = parseInt(entrada.question("\nDigite o valor da placa-mãe/MB: "));
-let memoriaRam  = entrada.question("\nDigite o valor da memória RAM: ");
-let discoSolido  = entrada.question("\nDigite o valor do SSD: ");
-let discoRigido  = entrada.question("\nDigite o valor do HD: ");
-let fonteEnergia  = entrada.question("\nDigite o valor da FONTE: ");
-let placaDeVideo  = entrada.question("\nDigite o valor da placa de vídeo/GPU: ");
+let dots = "";
+dots = outPads.padStart(30, `.`);
+let processador  = parseInt(entrada.question(`\nDigite o valor do processador/CPU:${dots}`));
+let placaMae  = parseInt(entrada.question(`\nDigite o valor da placa-mãe/MB:${dots}`));
+let memoriaRam  = parseInt(entrada.question(`\nDigite o valor da memória RAM:${dots}`));
+let discoSolido  = parseInt(entrada.question(`\nDigite o valor do SSD:${dots}`));
+let discoRigido  = parseInt(entrada.question(`\nDigite o valor do HD:${dots}`));
+let fonteEnergia  = parseInt(entrada.question(`\nDigite o valor da FONTE:${dots}`));
+let placaDeVideo  = parseInt(entrada.question(`\nDigite o valor da placa de vídeo/GPU:${dots}`));
 
 console.log(calculaPc(processador, placaMae, memoriaRam, discoSolido, discoRigido, fonteEnergia, placaDeVideo));
