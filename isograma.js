@@ -8,18 +8,18 @@ Assume the empty string is an isogram. Ignore letter case.
 
 */
 
-function isIsogram( str ){
+function isIsogram(str) {
   let letra;
   let resultado = false;
   let cont = 0;
-  for ( let i = 0 ; i < str.length ; i++ ) {
-      letra = str[cont];
-      cont++;
-    for (let j = cont ; j < str.length ; j++ ){
-        console.log( letra + " == " + str[j]);
-        if ( str[j] != letra ) {
-            resultado = true;
-        } 
+  for (let i = 0; i < str.length; i++) {
+    letra = str[cont];
+    cont++;
+    for (let j = cont; j < str.length; j++) {
+      console.log(letra + " == " + str[j]);
+      if (str[j] != letra) {
+        resultado = true;
+      }
     }
   } return resultado;
 }
@@ -28,4 +28,4 @@ function isIsogram( str ){
 const str = "Dermatoglyphics";
 const str2 = "moOse";
 
-console.log(isIsogram( str ));
+console.log(isIsogram(str));

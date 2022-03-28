@@ -10,13 +10,13 @@ Encontre a soma de todos os multiplos de 3 ou 5 abaixo de 1000.
 
 
  */
-function somaMultiplos() {
-    let soma = 0;
-    for ( let i = 1; i < 1000 ; i++ ) {
-        if ( i % 3 == 0 || i % 5 == 0 ) {
-            soma += i;
-        }
+const somaMultiplos = () => {
+  let soma = 0;
+  for (let i = 1; i < 1000; i++) {
+    if (i % 3 == 0 || i % 5 == 0) {
+      soma += i;
     }
-    return "\nSoma dos multiplos de 3 ou 5 abaixo de 1000 é = " + soma + "!\n";
+  }
+  return "\nSoma dos multiplos de 3 ou 5 abaixo de 1000 é = " + soma + "!\n";
 }
 console.log(somaMultiplos());

@@ -7,9 +7,9 @@ If-else simples
 */
 
 
-function compararString( str1, str2) {
+const compararString = (str1, str2) => {
 
-  if ( str1.length === str2.length ) {
+  if (str1.length === str2.length) {
     return true
   }
   return false;
@@ -18,4 +18,4 @@ function compararString( str1, str2) {
 const string_1 = "LOTR";
 const string_2 = "lotr";
 
-console.log(compararString( string_1, string_2 ));
+console.log(compararString(string_1, string_2));

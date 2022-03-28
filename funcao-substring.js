@@ -2,8 +2,8 @@
  * Autor: Joel Guerreiro
  * Algoritmo que faz a troca de uma substring de uma string.
  * */
-function trocaString(stringTexto) {
-  let textoNovo = stringTexto.replace( stringTexto.substr( 10, 10 ),"JS");
+const trocaString = (stringTexto) => {
+  let textoNovo = stringTexto.replace(stringTexto.substr(10, 10), "JS");
   return textoNovo;
 }
 
