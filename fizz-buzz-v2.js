@@ -12,19 +12,19 @@ For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the
 
 */
 
-function fizzBuzz() {
-    let cont = 1;
-    for ( let i = 1 ; i <= 100 ; i++ ) {
-        if ( cont % 5 === 0 && cont % 3 === 0 ) {
-            console.log("FizzBuzz!\n");
-        } else if ( cont % 3 === 0 ) {
-            console.log("Fizz!\n");
-        } else if ( cont % 5 === 0 ) {
-            console.log("Buzz!\n");
-        } else {
-            console.log(cont + "\n");
-        }
-        cont++;
+const fizzBuzz = () => {
+  let cont = 1;
+  for (let i = 1; i <= 100; i++) {
+    if (cont % 5 === 0 && cont % 3 === 0) {
+      console.log("FizzBuzz!\n");
+    } else if (cont % 3 === 0) {
+      console.log("Fizz!\n");
+    } else if (cont % 5 === 0) {
+      console.log("Buzz!\n");
+    } else {
+      console.log(cont + "\n");
     }
+    cont++;
+  }
 }
 console.log(fizzBuzz());

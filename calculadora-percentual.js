@@ -13,7 +13,7 @@ Calculadora de percentual e juros sobre valor informado.
 
 import entrada from 'readline-sync';
 
-function calculaJuros(capital, taxaJuros, padsDots) {
+const calculaJuros = (capital, taxaJuros, padsDots) => {
   let inPads = padsDots;
   let juros = 0;
   let montante = 0;
