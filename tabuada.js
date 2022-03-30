@@ -18,7 +18,7 @@ const tabuada = (valor) => {
   while (contador <= 10) {
     aux = contador;
     resultado = aux * valor;
-    console.log(`Valor: ${valor} = ${contador} = ${resultado}`);
+    console.log(`Valor: ${valor} x ${contador} = ${resultado}`);
     contador++;
   }
 }
