@@ -2,7 +2,7 @@
 
 Autor: Joel Guerreiro
 
-Estudo de função nativa de arrays do JavaScript
+Estudo de função nativa 'map()' de arrays do JavaScript
 O array de objetos contém informações populacionais de cidades da Estônia
 
 */
