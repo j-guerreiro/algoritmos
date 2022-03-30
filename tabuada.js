@@ -9,21 +9,23 @@ Autor: Joel Guerreiro
 
 import entrada from 'readline-sync';
 
-const tabuada = (valor) => {
+const calculaTabuadas = (valor) => {
 
   let contador = 0;
   let aux = 0;
   let resultado;
 
+  console.log(`\nTabuada do ${valor}\n`);
   while (contador <= 10) {
     aux = contador;
     resultado = aux * valor;
-    console.log(`Valor: ${valor} x ${contador} = ${resultado}`);
+    console.log(`${valor} x ${contador} = ${resultado}`);
     contador++;
   }
+  console.log(`\n`);
 }
 
 let numeroTabuada = entrada.question(`Informe o numero da tabuada: `);
-console.log(tabuada(numeroTabuada));
+calculaTabuadas(numeroTabuada);
 
 
