@@ -2,22 +2,23 @@
 
 # Autor da solucao: Joel Guerreiro
 
-Write a program that only the users Alice and Bob are greeted with their names.
+Escreva um programa em que somente os usuários Alice ou Bob possam ser
+cumprimentados com seus nomes ao realizar login. 
 
  */
 
 import entrada from "readline-sync";
 
-function isAliceOrBob(user) {
-  let message = ``;
+const testaUsuario = (user) => {
+  let msg = ``;
   if (user === "Alice" || user === "Bob") {
-    message = `\nHello ${user}, welcome back!\n`;
+    msg = `\nOlá ${user}, bem-vindo(a) de volta!\n`;
     return message;
   } else {
-    message = `\nUnathorized User!\n`;
-    return message;
+    msg = `\nUsuário não autorizado!\n`;
+    return msg;
   }
 }
-let usuario = entrada.question("\nUser: ");
-console.log(isAliceOrBob(usuario));
+let loginUsuario = entrada.question("\nLogin Usuário: ");
+console.log(testaUsuario(loginUsuario));
 

@@ -3,6 +3,7 @@
  * Autor: Joel Guerreiro
  *
  * Algoritmo utilizando manipulacao de datas com funcoes nativas do JavaScript
+ * para descobrir se o ano atual é bissexto ou não.
  *
  *
  *
