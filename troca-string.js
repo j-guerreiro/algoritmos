@@ -6,10 +6,10 @@ Programa que utiliza a funcao replace para substituir parte de uma string
 
 */
 
-function trocaString( texto ) {
+function trocaString(texto) {
   let nova_frase = texto.replace("Rings", "Lords");
   return nova_frase;
 }
 let frase = "\n\'The Lord of the Rings\'\n";
 
-console.log(trocaString( frase ));
+console.log(trocaString(frase));

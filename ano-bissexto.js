@@ -8,11 +8,10 @@
  *
  * */
 
-//arrow function
-const anoBissexto = (paramData) => {
-  //extraindo somente o ano
-  const anoAtual = paramData.getFullYear();
-  let resultado = (anoAtual % 4 === 0) ? 'Positivo, o ano e bissexto!' : 'Negativo, o ano nao e bissexto!';
+
+const anoBissexto = (data) => {
+  const anoAtual = data.getFullYear();
+  let resultado = (anoAtual % 4 === 0) ? `\nPositivo, o ano ${anoAtual} é bissexto!\n` : `\nNegativo, o ano ${anoAtual} não é bissexto!\n`;
   return resultado;
 
 }
